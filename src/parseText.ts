@@ -9,6 +9,6 @@ const parseText = ( text: string ) => {
 }
 
 export const write = (textInput: HTMLInputElement, textToParsed: HTMLSpanElement) => {
-    const parsedText = parseText(textInput.value);
+    const parsedText = parseText(textInput.value.trim());
     textToParsed.textContent = parsedText;
 }
